@@ -1,0 +1,18 @@
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #D8A633 !important; /* Màu vàng */
+    border-color: #D8A633 !important;
+  }
+  .ant-checkbox-checked::after {
+    border-color: #D8A633 !important; /* Đường viền */
+  }
+  .ant-checkbox-inner {
+    border-radius: 0 !important; /* Loại bỏ góc bo tròn */
+  }
+  .ant-checkbox-inner {
+    width: 14px; /* Đặt kích thước chiều rộng */
+    height: 14px; /* Đặt kích thước chiều cao */
+  }
+  
+  .ant-checkbox {
+    transform: scale(0.8); /* Thu nhỏ tổng thể checkbox */
+  }
