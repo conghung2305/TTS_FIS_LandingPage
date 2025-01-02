@@ -188,6 +188,7 @@ const ListCategoryUser = () => {
                                     <Checkbox>Xây dựng</Checkbox>
                                 </label>
                                 {/* Hiển thị các li bên dưới khi dropdown mở */}
+                                {/* Hiển thị các li bên dưới khi dropdown mở */}
                                 {openDropdowns.includes(3) && (
                                     <ul className="pl-8 space-y-2">
                                         <li>
