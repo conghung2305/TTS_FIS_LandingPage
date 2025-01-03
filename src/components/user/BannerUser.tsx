@@ -18,7 +18,7 @@ const BannerSlideshow = () => {
     return () => clearInterval(interval);
   }, [banners.length]);
 
-  const handleImageClick = (image:any) => {
+  const handleImageClick = (image: any) => {
     setSelectedImage(image);
     setShowModal(true); // Hiển thị modal khi click vào ảnh
   };
@@ -66,7 +66,7 @@ const BannerSlideshow = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="relative max-w-4xl mx-auto">
-           
+
             <IoIosClose onClick={handleCloseModal} className="cursor-pointer absolute right-2 bg-transparent text-white text-4xl font-bold p-2  focus:outline-none" />
             <img
               src={selectedImage}
@@ -74,9 +74,9 @@ const BannerSlideshow = () => {
               className="max-w-full max-h-full object-contain"
             />
             <a
-              ref={selectedImage}
-              download
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black px-4 py-2 rounded"
+              href={selectedImage} // Đặt URL ảnh vào href
+              download // Kích hoạt chế độ tải về
+              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-[#D8A633] px-4 py-2 rounded"
             >
               Tải về
             </a>
