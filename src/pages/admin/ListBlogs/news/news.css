@@ -1,0 +1,7 @@
+.custom-table .ant-table-thead > tr > th {
+    @apply bg-gray-300 text-black font-mono text-left text-xs;
+  }
+  .custom-table .ant-table-tbody > tr > td {
+    @apply text-xs; /* Sử dụng đúng với td trong tbody */
+  } 
+  

@@ -21,11 +21,11 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, toggleOpen })
         {isOpen && (
             <ul className="space-y-2 pl-6">
                 {items.map((item, index) => (
-                    <li key={index} className="flex items-center">
+                    <li key={index} className="flex items-center text-xs">
                         <span className="mr-2 text-gray-500">
                             <BiSolidLayer />
                         </span>
-                        {item}
+                      {item}
                     </li>
                 ))}
             </ul>

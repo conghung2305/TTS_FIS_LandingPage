@@ -30,7 +30,9 @@ const HeaderAdmin = () => {
                 </div>
             </div>
             <div className="pr-4">
-                <div className="w-6 h-6 rounded-full bg-gray-500 text-xs"></div>
+                <div className="w-6 h-6 rounded-full bg-gray-500 text-xs">
+                    <img src={logo} alt=""  />
+                </div>
             </div>
         </header>
 
